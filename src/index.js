@@ -60,22 +60,7 @@ const app = document.getElementById('app');
 
 app.innerHTML = `
   <div class="page-shell">
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
-          <span class="brand-mark">H</span>
-          <span class="brand-name">Handsome</span>
-        </div>
-        <nav class="nav-links">
-          <a href="#about">Про нас</a>
-          <a href="#services">Послуги</a>
-          <a href="#gallery">Роботи</a>
-          <a href="#team">Команда</a>
-          <a href="#contact">Контакти</a>
-        </nav>
-        <button class="btn btn-primary">Записатись</button>
-      </div>
-    </header>
+   
 
     <main>
       <section class="hero">

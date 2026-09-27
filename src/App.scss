@@ -1,13 +1,4 @@
-$bg: #000000;
-$bg-soft: #141414;
-$panel: #0e1b3c;
-$text: #f5f5f5;
-$muted: #b7b7b7;
-$line: rgba(255, 255, 255, 0.12);
-$accent: #ffe400;
-$accent-2: #1e73be;
-$white: #ffffff;
-$shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+@import "./variables";
 
 * {
   box-sizing: border-box;
@@ -21,7 +12,7 @@ body {
   margin: 0;
   background: $bg;
   color: $text;
-  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
 }
 
 a {
@@ -38,70 +29,9 @@ button {
   font: inherit;
 }
 
-.page-shell {
-  background: $bg;
-}
-
 .container {
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
-}
-
-.topbar {
-  position: sticky;
-  top: 0;
-  background: rgba(0, 0, 0, 0.78);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid $line;
-  z-index: 20;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  min-height: 90px;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  background: $accent;
-  color: $bg;
-  font-size: 1.1rem;
-}
-
-.brand-name {
-  font-size: 0.88rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 28px;
-  color: $muted;
-  font-size: 0.9rem;
-
-  a {
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: $accent;
-    }
-  }
 }
 
 .btn {
@@ -110,7 +40,9 @@ button {
   padding: 16px 28px;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-1px);
@@ -309,7 +241,7 @@ button {
     gap: 10px;
 
     &::before {
-      content: '✓';
+      content: "✓";
       color: $accent;
       font-weight: 800;
     }
@@ -326,7 +258,11 @@ button {
 }
 
 .info-card {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.96), rgba(14, 27, 60, 0.75));
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.96),
+    rgba(14, 27, 60, 0.75)
+  );
   border: 1px solid $line;
   border-radius: 22px;
   padding: 26px 22px;
@@ -463,7 +399,11 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  background: linear-gradient(135deg, rgba(255, 228, 0, 0.12), rgba(30, 115, 190, 0.12));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 228, 0, 0.12),
+    rgba(30, 115, 190, 0.12)
+  );
   border: 1px solid $line;
   border-radius: 28px;
   padding: 34px 32px;
