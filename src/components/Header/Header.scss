@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid $line;
+  z-index: 20;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 90px;
+
+    &__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+
+      &__mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: $accent;
+        color: $bg;
+        font-size: 1.1rem;
+      }
+
+      &__name {
+        font-size: 0.88rem;
+      }
+    }
+
+    &__links {
+      display: flex;
+      gap: 28px;
+      color: $muted;
+      font-size: 0.9rem;
+
+      a {
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
