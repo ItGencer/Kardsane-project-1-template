@@ -1,11 +1,16 @@
-import Header from "./components/Header/Header";
 import "./App.scss";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <>
       <Header />
-      <main></main>
+      <main>
+        <Hero />
+      </main>
+      <Footer />
     </>
   );
 }

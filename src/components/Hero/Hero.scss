@@ -1,0 +1,91 @@
+@import "../../variables";
+
+
+
+.hero {
+  padding: 72px 0 60px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 42px;
+}
+
+
+.hero-copy {
+  h1 {
+    margin: 0;
+    font-size: clamp(3.3rem, 7vw, 6rem);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+    max-width: 620px;
+  }
+}
+
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+
+.hero-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+
+
+.floating-card {
+  position: absolute;
+  right: -10px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(7, 7, 7, 0.84);
+  border: 1px solid $line;
+  border-radius: 18px;
+  padding: 18px 20px;
+  min-width: 200px;
+  backdrop-filter: blur(12px);
+
+  span,
+  small {
+    color: $muted;
+  }
+
+  strong {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 36px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  strong {
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+  }
+
+  span {
+    color: $muted;
+    font-size: 0.8rem;
+  }
+}
