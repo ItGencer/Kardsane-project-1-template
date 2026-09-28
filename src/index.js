@@ -229,20 +229,6 @@ app.innerHTML = `
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div class="brand footer-brand">
-          <span class="brand-mark">H</span>
-          <span class="brand-name">Handsome</span>
-        </div>
-        <p>© <span id="year"></span> Barbi Shop</p>
-        <div class="footer-links">
-          <a href="#">Instagram</a>
-          <a href="#">Telegram</a>
-          <a href="#">Location</a>
-        </div>
-      </div>
-    </footer>
   </div>
 `;
 
