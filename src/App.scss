@@ -121,9 +121,6 @@ button {
   gap: 24px;
 }
 
-.services-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
 
 .info-card {
   background: linear-gradient(
@@ -149,38 +146,6 @@ button {
 .team-card h3 {
   margin: 0 0 14px;
   font-size: 1.5rem;
-}
-
-.service-card {
-  p {
-    margin: 0 0 18px;
-    color: $muted;
-    line-height: 1.7;
-  }
-}
-
-.service-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: auto;
-  padding-top: 12px;
-  border-top: 1px solid $line;
-
-  span {
-    color: $accent;
-    font-weight: 700;
-  }
-
-  button {
-    background: transparent;
-    color: $white;
-    border: 1px solid $line;
-    border-radius: 999px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
 }
 
 .gallery-grid {

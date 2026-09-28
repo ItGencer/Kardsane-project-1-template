@@ -120,10 +120,10 @@ function Footer() {
         </p>
         <div className="footer__inner__links">
           {socialSvg.map(({ link, value, id }) => (
-        <a href={link} key={id}>
-          {value}
-        </a>
-      ))}
+            <a href={link} key={id}>
+              {value}
+            </a>
+          ))}
         </div>
       </div>
     </footer>
