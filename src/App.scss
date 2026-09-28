@@ -115,68 +115,12 @@ button {
   }
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 44px;
-  align-items: center;
-}
-
-.about-image-wrap {
-  overflow: hidden;
-  border-radius: 30px;
-  border: 1px solid $line;
-  box-shadow: $shadow;
-
-  img {
-    min-height: 520px;
-    object-fit: cover;
-  }
-}
-
-.about-copy {
-  h2 {
-    margin: 0 0 18px;
-    font-size: clamp(2rem, 4vw, 3.1rem);
-    letter-spacing: -0.06em;
-  }
-
-  p {
-    color: $muted;
-    line-height: 1.8;
-    margin: 0 0 18px;
-  }
-}
-
-.check-list {
-  list-style: none;
-  padding: 0;
-  margin: 24px 0 0;
-  display: grid;
-  gap: 12px;
-  color: $text;
-
-  li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    &::before {
-      content: "✓";
-      color: $accent;
-      font-weight: 800;
-    }
-  }
-}
 
 .cards-grid {
   display: grid;
   gap: 24px;
 }
 
-.services-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
 
 .info-card {
   background: linear-gradient(
@@ -202,38 +146,6 @@ button {
 .team-card h3 {
   margin: 0 0 14px;
   font-size: 1.5rem;
-}
-
-.service-card {
-  p {
-    margin: 0 0 18px;
-    color: $muted;
-    line-height: 1.7;
-  }
-}
-
-.service-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: auto;
-  padding-top: 12px;
-  border-top: 1px solid $line;
-
-  span {
-    color: $accent;
-    font-weight: 700;
-  }
-
-  button {
-    background: transparent;
-    color: $white;
-    border: 1px solid $line;
-    border-radius: 999px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
 }
 
 .gallery-grid {

@@ -2,6 +2,8 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Service from "./components/Service/Service";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <About/>
+        <Service/>
       </main>
       <Footer />
     </>
