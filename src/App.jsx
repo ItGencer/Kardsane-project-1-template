@@ -7,6 +7,7 @@ import Service from "./components/Service/Service";
 import Gallery from "./components/gallery/Gallery";
 import Team from "./components/Team/Team";
 import Testimonials from "./components/Testimonials/Testimonials";
+import SignUp from "./components/Sign-up/Sign-up";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Gallery/>
         <Team/>
         <Testimonials/>
+        <SignUp/>
       </main>
       <Footer />
     </>
