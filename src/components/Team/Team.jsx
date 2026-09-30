@@ -34,18 +34,15 @@ function Team() {
             <h2>Майстри, які люблять свою справу.</h2>
           </div>
           <div className="cards-grid team-grid">
-            {team
-              .map(
-                (person) => 
-                  <article className="info-card team-card">
-                    <img src={person.image} alt={person.name} />
-                    <div className="team-text">
-                      <h3>{person.name}</h3>
-                      <p>{person.role}</p>
-                    </div>
-                  </article>
-                  
-              )}
+            {team.map((person) => (
+              <article key={person.name} className="info-card team-card">
+                <img src={person.image} alt={person.name} />
+                <div className="team-text">
+                  <h3>{person.name}</h3>
+                  <p>{person.role}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

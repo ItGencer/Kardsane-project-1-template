@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Service from "./components/Service/Service";
 import Gallery from "./components/gallery/Gallery";
 import Team from "./components/Team/Team";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Service/>
         <Gallery/>
         <Team/>
+        <Testimonials/>
       </main>
       <Footer />
     </>
