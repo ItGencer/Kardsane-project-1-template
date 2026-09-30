@@ -1,27 +1,6 @@
 import "./styles.scss";
 
 
-const team = [
-  {
-    name: "Niko",
-    role: "Senior Barber",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80",
-  },
-  {
-    name: "Alex",
-    role: "Beard Artist",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80",
-  },
-  {
-    name: "Mason",
-    role: "Style Specialist",
-    image:
-      "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=700&q=80",
-  },
-];
-
 const testimonials = [
   "Найкраще місце для стрижки в місті. Чітка робота, стильний інтер’єр і завжди приємна атмосфера.",
   "Легко знайшов свій стиль. Майстри уважні до деталей і реально розбираються у формі обличчя.",
@@ -36,32 +15,6 @@ app.innerHTML = `
 
     <main>
 
-     
-
-
-      <section id="team" class="section team">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-tag">Команда</p>
-            <h2>Майстри, які люблять свою справу.</h2>
-          </div>
-          <div class="cards-grid team-grid">
-            ${team
-              .map(
-                (person) => `
-                  <article class="info-card team-card">
-                    <img src="${person.image}" alt="${person.name}" />
-                    <div class="team-text">
-                      <h3>${person.name}</h3>
-                      <p>${person.role}</p>
-                    </div>
-                  </article>
-                `,
-              )
-              .join("")}
-          </div>
-        </div>
-      </section>
 
       <section class="section testimonials">
         <div class="container">

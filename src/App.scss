@@ -148,33 +148,6 @@ button {
   font-size: 1.5rem;
 }
 
-.team-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.team-card {
-  padding: 0;
-  overflow: hidden;
-
-  img {
-    height: 320px;
-    object-fit: cover;
-  }
-}
-
-.team-text {
-  padding: 20px 18px 22px;
-
-  h3 {
-    margin: 0 0 14px;
-    font-size: 1.5rem;
-  }
-
-  p {
-    margin: 0;
-    color: $muted;
-  }
-}
 
 .review-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
