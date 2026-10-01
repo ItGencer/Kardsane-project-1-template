@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Barber Shop icon">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1a120d"/>
+      <stop offset="100%" stop-color="#0d0907"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f8d77d"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b88913"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+
+  <circle cx="128" cy="128" r="96" fill="none" stroke="url(#gold)" stroke-width="12"/>
+  <circle cx="128" cy="128" r="78" fill="none" stroke="#f5d57a" stroke-width="2" opacity="0.8"/>
+
+  <g fill="none" stroke="#d7b55a" stroke-width="3" stroke-linecap="round" opacity="0.9">
+    <path d="M62 72h132"/>
+    <path d="M62 184h132"/>
+    <path d="M72 84v88"/>
+    <path d="M184 84v88"/>
+  </g>
+
+  <g transform="translate(0 6)">
+    <rect x="80" y="101" width="54" height="44" rx="14" fill="#f5f5f5"/>
+    <rect x="122" y="101" width="54" height="44" rx="14" fill="#f5f5f5"/>
+    <path d="M134 96l40-22l12 22l-40 22z" fill="url(#gold)" opacity="0.9"/>
+    <path d="M121 96l-40-22l-12 22l40 22z" fill="url(#gold)" opacity="0.9"/>
+    <path d="M128 97v-28" stroke="#f5f5f5" stroke-width="8" stroke-linecap="round"/>
+    <path d="M128 157v28" stroke="#f5f5f5" stroke-width="8" stroke-linecap="round"/>
+    <path d="M126 96l-7 18h18l-7-18" fill="#d4af37"/>
+    <circle cx="102" cy="123" r="8" fill="#0f0c0a"/>
+    <circle cx="154" cy="123" r="8" fill="#0f0c0a"/>
+  </g>
+
+  <g opacity="0.8">
+    <path d="M88 64l12 12" stroke="#f7d57a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M168 64l-12 12" stroke="#f7d57a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M88 192l12-12" stroke="#f7d57a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M168 192l-12-12" stroke="#f7d57a" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
