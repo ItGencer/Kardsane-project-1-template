@@ -1,0 +1,28 @@
+@use "../../_variables" as *;
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 16px 28px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &__primary {
+    background: $accent;
+    color: $bg;
+    box-shadow: 0 14px 28px rgba(255, 228, 0, 0.18);
+  }
+
+  &__light {
+    background: transparent;
+    color: $white;
+    border: 1px solid $line;
+  }
+}
