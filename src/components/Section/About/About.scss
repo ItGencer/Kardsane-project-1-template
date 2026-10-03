@@ -1,39 +1,31 @@
 @use "../../../variables" as *;
 
-.about-grid {
+.about {
+
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
   gap: 44px;
-  align-items: center;
-}
 
-.about-image-wrap {
-  overflow: hidden;
-  border-radius: 30px;
-  border: 1px solid $line;
-  box-shadow: $shadow;
+  &__image {
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid $line;
+    box-shadow: $shadow;
 
-  img {
-    min-height: 520px;
-    object-fit: cover;
-  }
-}
-
-.about-copy {
-  h2 {
-    margin: 0 0 18px;
-    font-size: clamp(2rem, 4vw, 3.1rem);
-    letter-spacing: -0.06em;
+    img {
+      min-height: 520px;
+      object-fit: cover;
+    }
   }
 
-  p {
-    color: $muted;
-    line-height: 1.8;
-    margin: 0 0 18px;
+  &__content {
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      letter-spacing: -0.06em;
+    }
+    
   }
 }
-
-
 
 .check-list {
   list-style: none;
