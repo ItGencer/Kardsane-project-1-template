@@ -1,5 +1,6 @@
-import './Team.scss';
-
+import SectionTag from "../../SectionTag/SectionTag";
+import TeamCard from "../../Team-card/Team-card";
+import "./Team.scss";
 
 const team = [
   {
@@ -22,31 +23,20 @@ const team = [
   },
 ];
 
-
 function Team() {
-    return(
-
-
-    <section id="team" className="section team">
-        <div className="container">
-          <div className="section-heading">
-            <p className="section-tag">Команда</p>
-            <h2>Майстри, які люблять свою справу.</h2>
-          </div>
-          <div className="cards-grid team-grid">
-            {team.map((person) => (
-              <article key={person.name} className="info-card team-card">
-                <img src={person.image} alt={person.name} />
-                <div className="team-text">
-                  <h3>{person.name}</h3>
-                  <p>{person.role}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-    )
+  return (
+    <section id="team" className="team">
+      <div className="team__heading">
+        <SectionTag value="Команда" />
+        <h2>Майстри, які люблять свою справу.</h2>
+      </div>
+      <div className="team__grid">
+        {team.map((person) => (
+          <TeamCard key={person.name} person={person} />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Team;
