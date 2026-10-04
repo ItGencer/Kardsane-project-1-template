@@ -162,3 +162,16 @@ section {
     letter-spacing: -0.06em;
   }
 }
+
+
+
+.card{
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.96),
+    rgba(14, 27, 60, 0.75)
+  );
+  border: 1px solid $line;
+  border-radius: 22px;
+  padding: 26px 22px;
+}

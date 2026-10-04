@@ -2,7 +2,7 @@ import "./Sign-up.scss";
 
 function SignUp() {
   return (
-    <section id="contact" className="section cta-block">
+    <section id="contact" className="cta-block">
       <div className="container cta-wrap">
         <div>
           <p className="section-tag">Запис</p>

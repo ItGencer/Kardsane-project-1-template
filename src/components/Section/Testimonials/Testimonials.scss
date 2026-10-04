@@ -4,9 +4,15 @@
   margin-top: 40px;
 
   &__heading h2 {
-    margin-bottom: 40px;
+    margin-top: 40px;
     font-size: 29px;
     font-weight: 700;
     color: $text;
+  }
+
+  &__grid {
+    margin-top: 40px;
+    display: grid;
+    gap: 20px;
   }
 }
