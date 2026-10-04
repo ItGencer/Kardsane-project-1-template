@@ -1,12 +1,23 @@
 @use "../../../variables" as *;
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-}
+.gallery {
+  margin-top: 80px;
 
-.gallery-item {
+  &__heading {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 29px;
+      font-weight: 700;
+      color: $text;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: 30px;
+
+&__item {
   overflow: hidden;
   border-radius: 24px;
   border: 1px solid $line;
@@ -22,4 +33,10 @@
   &:hover img {
     transform: scale(1.03);
   }
+}
+
+
+  }
+
+  
 }

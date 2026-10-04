@@ -1,4 +1,5 @@
 import "./Gallery.scss";
+import SectionTag from "../../SectionTag/SectionTag";
 
 const gallery = [
   "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80",
@@ -11,20 +12,18 @@ const gallery = [
 
 function Gallery() {
   return (
-    <section className="section showcase">
-      <div className="container">
-        <div className="section-heading">
-          <p className="section-tag">Portfolio</p>
+    <section id="gallery" className="gallery">
+        <div className="gallery__heading">
+          <SectionTag value="Портфоліо" />
           <h2>Наші роботи в дії.</h2>
         </div>
-        <div id="gallery" className="gallery-grid">
+        <div className="gallery__grid">
           {gallery.map((image, index) => (
-            <figure key={index} className="gallery-item">
+            <figure key={index} className="gallery__grid__item">
               <img src={image} alt="Barber result" />
             </figure>
           ))}
         </div>
-      </div>
     </section>
   );
 }
