@@ -1,0 +1,12 @@
+@import '../../../variables';
+
+.testimonials {
+  margin-top: 40px;
+
+  &__heading h2 {
+    margin-bottom: 40px;
+    font-size: 29px;
+    font-weight: 700;
+    color: $text;
+  }
+}

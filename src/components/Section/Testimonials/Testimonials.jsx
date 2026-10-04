@@ -1,5 +1,6 @@
-import './Testimonials.scss';
-
+import SectionTag from "../../SectionTag/SectionTag";
+import TestimonialsCard from "../../Card/Testimonials-card/Testimonials-card";
+import "./Testimonials.scss";
 
 const testimonials = [
   "Найкраще місце для стрижки в місті. Чітка робота, стильний інтер’єр і завжди приємна атмосфера.",
@@ -8,26 +9,19 @@ const testimonials = [
 ];
 
 function Testimonials() {
-    return(
-
-
-      <section className="section testimonials">
-        <div className="container">
-          <div className="section-heading">
-            <p className="section-tag">Відгуки</p>
-            <h2>Ті, хто повертаться знову.</h2>
-          </div>
-          <div className="cards-grid review-grid">
-            {testimonials.map((text, index) => (
-              <article key={index} className="review-card">
-                <div className="stars">★★★★★</div>
-                <p>"{text}”</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-    )
+  return (
+    <section className="testimonials">
+      <div className="testimonials__heading">
+        <SectionTag value="Відгуки" />
+        <h2>Ті, хто повертаться знову.</h2>
+      </div>
+      <div className=" testimonials__grid">
+        {testimonials.map((text, index) => (
+          <TestimonialsCard key={index} text={text} index={index} />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Testimonials;

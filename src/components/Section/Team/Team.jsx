@@ -1,5 +1,5 @@
 import SectionTag from "../../SectionTag/SectionTag";
-import TeamCard from "../../Team-card/Team-card";
+import TeamCard from "../../Card/Team-card/Team-card";
 import "./Team.scss";
 
 const team = [

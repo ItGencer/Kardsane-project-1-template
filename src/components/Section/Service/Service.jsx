@@ -1,4 +1,4 @@
-import ServiceCard from "../../Service-card/Service-card";
+import ServiceCard from "../../Card/Service-card/Service-card";
 import "./Service.scss";
 
 const services = [
