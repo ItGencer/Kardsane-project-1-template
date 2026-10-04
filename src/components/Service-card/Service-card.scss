@@ -1,0 +1,52 @@
+@use "../../variables" as *;
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.96),
+    rgba(14, 27, 60, 0.75)
+  );
+  border: 1px solid $line;
+  border-radius: 22px;
+  padding: 26px 22px;
+  min-height: 260px;
+
+  p {
+    margin: 0 0 18px;
+    color: $muted;
+    line-height: 1.7;
+  }
+
+  &__topline {
+  width: 46px;
+  height: 3px;
+  background: $accent;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+&__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid $line;
+
+  span {
+    color: $accent;
+    font-weight: 700;
+  }
+
+  button {
+    background: transparent;
+    color: $white;
+    border: 1px solid $line;
+    border-radius: 999px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+}
+
+}

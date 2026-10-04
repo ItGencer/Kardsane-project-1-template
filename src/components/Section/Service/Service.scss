@@ -1,39 +1,23 @@
 @use "../../../variables" as *;
 
-.services-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.service-card {
-  p {
-    margin: 0 0 18px;
-    color: $muted;
-    line-height: 1.7;
-  }
-}
-
-.service-meta {
+.services {
+  margin-top: 50px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: auto;
-  padding-top: 12px;
-  border-top: 1px solid $line;
+  gap: 40px;
+  flex-direction: column;
 
-  span {
-    color: $accent;
-    font-weight: 700;
+  &__heading {
+    h2 {
+      margin-top: 15px;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+    }
   }
 
-  button {
-    background: transparent;
-    color: $white;
-    border: 1px solid $line;
-    border-radius: 999px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
+&__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 
+}

@@ -1,3 +1,4 @@
+import ServiceCard from "../../Service-card/Service-card";
 import "./Service.scss";
 
 const services = [
@@ -29,27 +30,22 @@ const services = [
 
 function Service() {
   return (
-    <section id="services" className="section services">
-      <div className="container">
-        <div className="section-heading">
+    <section id="services" className="services">
+        <div className="services__heading">
           <p className="section-tag">Послуги</p>
           <h2>Твоє обличчя в надійних руках.</h2>
         </div>
-        <div className="cards-grid services-grid">
+        <div className="cards-grid services__grid">
           {services
             .map(({ id, title, price, desc }) => (
-              <article className="info-card service-card" key={id}>
-                <div className="card-topline"></div>
-                <h3>{title}</h3>
-                <p>{desc}</p>
-                <div className="service-meta">
-                  <span>{price}</span>
-                  <button>Get details</button>
-                </div>
-              </article>
+              <ServiceCard
+                key={id}
+                title={title}
+                price={price}
+                description={desc}
+              />
             ))}
         </div>
-      </div>
     </section>
   );
 }
