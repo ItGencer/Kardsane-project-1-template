@@ -1,9 +1,9 @@
 @use "../../_variables" as *;
 
 .btn {
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 12px;
-  padding: 16px 28px;
+  padding: 8px;
   font-weight: 700;
   cursor: pointer;
   transition:
@@ -14,12 +14,27 @@
     transform: translateY(-1px);
   }
 
+  &.large {
+    padding: 18px 28px;
+    font-size: 1rem;
+  }
+
+  &-primary,
   &__primary {
     background: $accent;
     color: $bg;
     box-shadow: 0 14px 28px rgba(255, 228, 0, 0.18);
   }
 
+  &-secondary,
+  &__secondary {
+    background: transparent;
+    color: $bg;
+    border-color: rgba(17, 17, 17, 0.28);
+    box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.06);
+  }
+
+  &-light,
   &__light {
     background: transparent;
     color: $white;

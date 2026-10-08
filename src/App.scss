@@ -137,40 +137,10 @@ section {
   margin-bottom: 14px;
 }
 
-.cta-block {
-  padding-bottom: 90px;
-}
-
-.cta-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 228, 0, 0.12),
-    rgba(30, 115, 190, 0.12)
-  );
-  border: 1px solid $line;
-  border-radius: 28px;
-  padding: 34px 32px;
-
-  h2 {
-    margin: 0;
-    max-width: 700px;
-    font-size: clamp(2rem, 4vw, 3rem);
-    letter-spacing: -0.06em;
-  }
-}
-
 
 
 .card{
-  background: linear-gradient(
-    180deg,
-    rgba(20, 20, 20, 0.96),
-    rgba(14, 27, 60, 0.75)
-  );
+ background: #2a2b38;
   border: 1px solid $line;
   border-radius: 22px;
   padding: 26px 22px;

@@ -1,15 +1,13 @@
 import "./Sign-up.scss";
+import SectionTag from "../../SectionTag/SectionTag";
+import FormContact from "../../Form/Form-contact/Form-contact";
+import Forms from "../../Form/Forms";
 
 function SignUp() {
   return (
-    <section id="contact" className="cta-block">
-      <div className="container cta-wrap">
-        <div>
-          <p className="section-tag">Запис</p>
-          <h2>Готовий знову відчути впевненість у своєму образі?</h2>
-        </div>
-        <button className="btn btn-primary large">Забронювати</button>
-      </div>
+    <section id="contact" className="appointment-booking">
+        <FormContact />
+        <Forms />
     </section>
   );
 }

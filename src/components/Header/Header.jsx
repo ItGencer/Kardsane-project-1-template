@@ -25,7 +25,7 @@ function Header() {
           <Navigation onLinkClick={handleCloseMenu} />
         </div>
 
-        <button className="btn btn-primary header__nav__cta">Записатись</button>
+        <button className="btn btn-primary">Записатись</button>
 
         <button
           type="button"
